@@ -1,0 +1,27 @@
+<strong> Courses </strong>
+
+<%= link_to 'New instance', new_instance_path %>
+
+  <table>
+    <tr>
+      <th> id </th>
+      <th> Course Name </th>
+      <th> Course Abbreviation </th>
+      <th> Core Id </th>
+      <th> Start Date </th>
+      <th> End Date </th>
+      <th> Producer </th>
+    </tr>
+
+  <% @instances.each do |instance| %>
+      <tr>
+        <td> <%= link_to instance.id , instance_path(instance) %> </td>
+        <td> <%= instance.course_name %> </td>
+        <td> <%= instance.course_abbreviation %> </td>
+        <td> <%= instance.core_id %> </td>
+        <td> <%= instance.start_date %> </td>
+        <td> <%= instance.end_date %> </td>
+        <td> <%= instance.producer %> </td>
+      </tr>
+    <% end %>
+  </table>
