@@ -1,0 +1,34 @@
+<h1> New Instance </h1>
+
+<%= form_for :instance do |f| %>
+  <p>
+    <%= f.label :course_name %> <br>
+    <%= f.text_field :course_name %>
+  </p>
+
+  <p>
+    <%= f.label :course_abbreviation %> <br>
+    <%= f.text_field :course_abbreviation %>
+  </p>
+
+  <p>
+    <%= f.label :core_id %> <br>
+    <%= f.text_field :core_id%>
+  </p>
+
+  <p>
+    <%= f.label :start_date %> <br>
+    <%= f.text_field :start_date %>
+  </p>
+
+  <p>
+    <%= f.label :end_date %> <br>
+    <%= f.text_field :end_date %>
+  </p>
+
+  <p>
+    <%= f.label :producer %> <br>
+    <%= f.text_field :producer %>
+  </p>
+
+<% end %>
