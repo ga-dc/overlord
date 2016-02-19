@@ -2,8 +2,8 @@ class InstancesController < ApplicationController
 
   def index
     @instances = Instance.all
+    render json: @instances
   end
-
 
   def new
   end
@@ -18,8 +18,6 @@ class InstancesController < ApplicationController
   def show
       @instance = Instance.find(params[:id])
     end
-
-
 
 
 private
